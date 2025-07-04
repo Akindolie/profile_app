@@ -24,7 +24,8 @@ class _ProfileHeaderState extends State<ProfileHeader> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return SizedBox(
-      height: 300,
+      //decoration: BoxDecoration(color: Colors.red),
+      height: 330,
       child: Stack(
         children: [
           Container(
@@ -68,7 +69,7 @@ class _ProfileHeaderState extends State<ProfileHeader> {
             ),
           ),
           Positioned(
-            bottom: 50,
+            bottom: 70,
             left: 0,
             right: 0,
             child: Center(
@@ -106,6 +107,7 @@ class _ProfileHeaderState extends State<ProfileHeader> {
             right: 0,
             child: Column(
               children: [
+                const SizedBox(height: 18),
                 Text(
                   'Michael Akindolie',
                   style: Theme.of(context).textTheme.headlineMedium,
